@@ -49,8 +49,8 @@ ScreenManager:
             MDBottomNavigationItem:
                 name: 'Body Mass Index Calc'
                 text: 'BMI CALC'
-                icon: 'calculator'              
-    '''
+                icon: 'calculator'
+'''
 
 
 class Main(Screen):
