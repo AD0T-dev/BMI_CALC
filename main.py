@@ -109,7 +109,7 @@ class MainApp(MDApp):
                 res_typ = "Healthy"
             elif res > 25.0 and res < 30.0:
                 res_typ = "Obese"
-            elif res>30.0:
+            elif res > 30.0:
                 res_typ = "not a human."
 
             format_res = "{:.2f}".format(res)
