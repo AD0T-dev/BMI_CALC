@@ -13,7 +13,6 @@ ScreenManager:
             title: 'BMI_Calc'
             md_bg_color: app.theme_cls.primary_color
             specific_text_color: 1, 1, 1, 1
-        
         MDTextField:
             id: val2
             input_filter: 'float'
@@ -33,7 +32,6 @@ ScreenManager:
             color_mode: 'custom'
             icon_right_color: app.theme_cls.primary_color
             icon_right: 'equal-box'
-        
         MDRoundFlatIconButton:
             id:add
             text: "Calculate"
@@ -48,12 +46,10 @@ ScreenManager:
         MDLabel:
             id: result
         MDBottomNavigation:
-    
             MDBottomNavigationItem:
                 name: 'Body Mass Index Calc'
                 text: 'BMI CALC'
-                icon: 'calculator'
-                
+                icon: 'calculator'              
     '''
 
 
