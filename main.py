@@ -120,6 +120,6 @@ class MainApp(MDApp):
         self.dialog.dismiss()
 	
     def neat_dialog(self, obj):
-     	self.dialog.dismiss()
+	self.dialog.dismiss()
 
 MainApp().run()
