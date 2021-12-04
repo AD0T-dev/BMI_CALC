@@ -82,26 +82,26 @@ class MainApp(MDApp):
         except ValueError:
             val1 = 0
             if not self.dialog:
-                self.dialog = MDDialog(title = "Error",text = "Weight or Height can't be blank",buttons =[MDRectangleFlatButton(text="OK", text_color=self.theme_cls.primary_color, on_release = self.neat_dialog),])
+                self.dialog = MDDialog(title = "Error", text = "Weight or Height can't be blank", buttons =[MDRectangleFlatButton(text="OK", text_color=self.theme_cls.primary_color, on_release = self.neat_dialog),])
             self.dialog.open()
         try:
             val2 = float(self.help_string.get_screen('Body Mass Index Calc').ids.val3.text) 
         except ValueError:
             val2 = 0
             if not self.dialog:
-                self.dialog = MDDialog(title = "Error",text = "Weight or Height can't be blank",buttons =[MDRectangleFlatButton(text="OK", text_color=self.theme_cls.primary_color, on_release = self.neat_dialog),])
+                self.dialog = MDDialog(title = "Error", text = "Weight or Height can't be blank", buttons =[MDRectangleFlatButton(text="OK", text_color=self.theme_cls.primary_color, on_release = self.neat_dialog),])
             self.dialog.open()
         
         if 0 in (val1, val2):
             if not self.dialog:
-                self.dialog = MDDialog(title = "Error",text = "Weight or Height can't be blank or 0",buttons =[MDRectangleFlatButton(text="OK", text_color=self.theme_cls.primary_color, on_release = self.neat_dialog),])
+                self.dialog = MDDialog(title = "Error", text = "Weight or Height can't be blank or 0", buttons =[MDRectangleFlatButton(text="OK", text_color=self.theme_cls.primary_color, on_release = self.neat_dialog),])
             self.dialog.open()
         else:
             res = val1/val2**2
             res_typ = ""
             if res == 0:
                 if not self.dialog:
-                    self.dialog = MDDialog(title = "Error",text = "Weight or Height can't be 0",buttons =[MDRectangleFlatButton(text="OK", text_color=self.theme_cls.primary_color, on_release = self.neat_dialog),])
+                    self.dialog = MDDialog(title = "Error", text = "Weight or Height can't be 0", buttons =[MDRectangleFlatButton(text="OK", text_color=self.theme_cls.primary_color, on_release = self.neat_dialog),])
                 self.dialog.open()
             elif res < 18.5:
                 res_typ = "Underweight"
