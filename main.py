@@ -92,7 +92,7 @@ class MainApp(MDApp):
                 self.dialog = MDDialog(title = "Error",text = "Weight or Height can't be blank",buttons =[MDRectangleFlatButton(text="OK", text_color=self.theme_cls.primary_color, on_release = self.neat_dialog),])
             self.dialog.open()
         
-        if val1 == 0 or val2 == 0:
+        if 0 in (val1, val2):
             if not self.dialog:
                 self.dialog = MDDialog(title = "Error",text = "Weight or Height can't be blank or 0",buttons =[MDRectangleFlatButton(text="OK", text_color=self.theme_cls.primary_color, on_release = self.neat_dialog),])
             self.dialog.open()
@@ -120,6 +120,6 @@ class MainApp(MDApp):
         self.dialog.dismiss()
 	
     def neat_dialog(self, obj):
-	    self.dialog.dismiss()
+     self.dialog.dismiss()
 
 MainApp().run()
