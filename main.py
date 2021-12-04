@@ -74,9 +74,9 @@ class MainApp(MDApp):
         res_typ = ""
         if res < 18.5:
             res_typ = "Underweight"
-        elif res > 18.5 and res < 24.9:
+        elif 18.5 > res < 24.9:
             res_typ = "Healthy"
-        elif res > 25.0 and res < 30.0:
+        elif 25.0 > res < 30.0:
             res_typ = "Obese"
         elif res > 30.0:
             res_typ = "not a human."
